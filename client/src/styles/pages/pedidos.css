@@ -1,0 +1,93 @@
+.pedidos-section {
+  background: #fafafa;
+  min-height: 100vh;
+  padding: 80px 5%;
+  font-family: "Inter", sans-serif;
+}
+
+.pedidos-title {
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.no-pedidos {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px dashed #ccc;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.tabla-pedidos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.tabla-pedidos th {
+  background: #111;
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.tabla-pedidos td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.tabla-pedidos tr:hover {
+  background: #f7f7f7;
+}
+
+/* Estados visuales */
+.estado {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.estado-creado {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.estado-entregado {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.estado-pendiente {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .pedidos-title {
+    font-size: 1.6rem;
+  }
+  .tabla-pedidos th,
+  .tabla-pedidos td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,209 @@
+.about-page {
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+/* ===== HERO ===== */
+.about-hero {
+  position: relative;
+  height: 55vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.about-hero .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.about-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+.about-hero .hero-content {
+  position: absolute;
+  bottom: 3rem;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+  max-width: 900px;
+}
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.about-hero .text-primary {
+  color: #60a5fa;
+}
+.about-hero .text-dark {
+  color: #fff;
+}
+
+/* ===== TEAM ===== */
+.team-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #f9fafb;
+}
+.team-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.team-section .highlight {
+  color: #2563eb;
+}
+.team-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.team-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+.team-info h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.team-info p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.email-link {
+  display: block;
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+.email-link:hover {
+  color: #1e40af;
+}
+
+/* ===== PROJECT DESCRIPTION ===== */
+.project-description {
+  margin-top: 2.5rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+.project-description p {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.project-description strong {
+  color: #111827;
+}
+
+
+/* ====== RESPONSIVE ====== */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content {
+    bottom: 2rem;
+    padding: 0 2rem;
+  }
+  .team-section {
+    padding: 3rem 1.5rem;
+  }
+  .project-description {
+    padding: 1.5rem;
+  }
+}
+
+/* Móviles grandes (≤768px) */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 50vh;
+  }
+  .about-hero h1 {
+    font-size: 2.1rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .team-section h2 {
+    font-size: 1.7rem;
+  }
+  .team-card {
+    padding: 1.5rem 1rem;
+  }
+  .team-info h5 {
+    font-size: 1.1rem;
+  }
+  .project-description {
+    padding: 1.2rem;
+    margin-top: 2rem;
+  }
+  .project-description p {
+    font-size: 0.95rem;
+  }
+  .academic-note h3 {
+    font-size: 1.15rem;
+  }
+  .academic-note p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Móviles pequeños (≤480px) */
+@media (max-width: 480px) {
+  .about-hero {
+    height: 45vh;
+  }
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content {
+    bottom: 1.5rem;
+  }
+  .hero-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .team-section {
+    padding: 2.5rem 1rem;
+  }
+  .team-info h5 {
+    font-size: 1rem;
+  }
+  .email-link {
+    font-size: 0.85rem;
+  }
+  .project-description {
+    padding: 1rem;
+  }
+  .project-description p {
+    font-size: 0.9rem;
+  }
+  .academic-note {
+    padding: 1.5rem 0.8rem;
+  }
+}

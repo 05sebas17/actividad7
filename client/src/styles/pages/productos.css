@@ -1,0 +1,85 @@
+.productos-container {
+  padding: 60px 10%;
+  background: #fafafa;
+}
+
+.productos-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.no-products {
+  text-align: center;
+  color: #888;
+}
+
+/* ===== Barra de filtros ===== */
+.productos-filtros {
+  background: #f8fafc;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.filtros-barra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtros-barra input,
+.filtros-barra select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  min-width: 160px;
+  background: #fff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.filtros-barra input:focus,
+.filtros-barra select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.filtros-barra button {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+.filtros-barra button:hover {
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+  transform: translateY(-1px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .filtros-barra {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filtros-barra input,
+  .filtros-barra select,
+  .filtros-barra button {
+    width: 100%;
+  }
+}
